@@ -1,0 +1,12 @@
+{
+  "name": "swiss-design",
+  "description": "Swiss/International Typographic Style principles for software and interaction design - clarity through reduction, grid systems, hierarchy, and typography",
+  "version": "1.0.0",
+  "author": {
+    "name": "Chris Zempel"
+  },
+  "homepage": "https://github.com/zemptime/zemptime-marketplace",
+  "repository": "https://github.com/zemptime/zemptime-marketplace",
+  "license": "MIT",
+  "keywords": ["design", "typography", "grids", "ui", "clarity", "swiss-style", "interaction-design"]
+}

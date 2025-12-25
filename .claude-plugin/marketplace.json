@@ -9,6 +9,12 @@
       "description": "Production-tested Rails patterns: CRUD controllers, rich models, concerns, fixtures, small PRs.",
       "source": "./vanilla-rails",
       "version": "1.0.0"
+    },
+    {
+      "name": "swiss-design",
+      "description": "Swiss/International Typographic Style principles for software and interaction design.",
+      "source": "./swiss-design",
+      "version": "1.0.0"
     }
   ]
 }
