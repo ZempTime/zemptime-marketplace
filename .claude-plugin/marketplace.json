@@ -1,0 +1,14 @@
+{
+  "name": "zemptime-marketplace",
+  "owner": {
+    "name": "Chris Zempel"
+  },
+  "plugins": [
+    {
+      "name": "vanilla-rails",
+      "description": "Production-tested Rails patterns: CRUD controllers, rich models, concerns, fixtures, small PRs.",
+      "source": "./vanilla-rails",
+      "version": "1.0.0"
+    }
+  ]
+}

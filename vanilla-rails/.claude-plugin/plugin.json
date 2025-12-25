@@ -1,0 +1,12 @@
+{
+  "name": "vanilla-rails",
+  "description": "Production-tested Rails patterns: CRUD controllers, rich models, concerns, fixtures, small PRs. Extracted from Basecamp-style applications.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Chris Zempel"
+  },
+  "homepage": "https://github.com/zemptime/zemptime-marketplace",
+  "repository": "https://github.com/zemptime/zemptime-marketplace",
+  "license": "MIT",
+  "keywords": ["rails", "basecamp", "crud", "concerns", "fixtures", "hotwire", "turbo", "stimulus"]
+}
