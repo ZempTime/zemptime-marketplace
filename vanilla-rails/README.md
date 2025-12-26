@@ -58,6 +58,7 @@ superpowers:brainstorming → /shape → superpowers:writing-plans
 | `vanilla-rails-hotwire` | Writing Turbo/Stimulus code |
 | `vanilla-rails-work-breakdown` | Planning features or PRs |
 | `vanilla-rails-style` | Ruby code style questions |
+| `vanilla-rails-views` | Writing ERB templates, partials, Turbo Streams |
 | `vanilla-rails-writing-affordances` | Extracting PORO wrappers for related operations |
 | `shaping` | Applying patterns to features (via `/shape`) |
 
