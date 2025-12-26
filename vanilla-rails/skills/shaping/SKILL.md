@@ -40,6 +40,7 @@ Check each vanilla-rails skill. For each, state whether it applies:
 - **delegated-types** - 5+ content types comingling in feeds/timelines?
 - **models** - Adding model behavior, state tracking, concerns?
 - **controllers** - Adding endpoints, state changes, resources?
+- **views** - ERB templates, partials, Turbo Streams?
 - **jobs** - Background processing needed?
 - **hotwire** - Dynamic UI updates?
 - **writing-affordances** - 3+ related methods or prefix clusters?
@@ -121,6 +122,7 @@ The writing-plans skill will create detailed, step-by-step implementation tasks 
 | delegated-types | 5+ types in unified timeline/feed |
 | models | State tracking, concerns, associations |
 | controllers | Endpoints, resources, state changes |
+| views | ERB templates, partials, collection rendering |
 | jobs | Background processing |
 | hotwire | Dynamic UI, Turbo frames/streams |
 | writing-affordances | 3+ related methods, prefix clusters |
