@@ -12,7 +12,7 @@ description: Use when refactoring Ruby/Rails code, organizing methods, deciding 
 You're writing Ruby/Rails code for 37signals-style projects. Symptoms that trigger this skill:
 - Refactoring methods with guard clauses
 - Organizing private methods in a class
-- Deciding whether to add `!` to method name
+- Deciding whether to add a bang to method name
 - Structuring controllers and models
 - Creating background jobs
 
@@ -36,7 +36,7 @@ If you're about to do any of these, you're violating 37signals style:
 |----------|------------------|
 | Add guard clauses (`return unless`, `return if`) | Use if/else (unless at method start with complex body) |
 | Remove indentation from private methods | Indent 2 spaces under `private` |
-| Add `!` to a method without counterpart | Use plain name (e.g., `close` not `close!`) |
+| Add bang to a method without counterpart | Use plain name (e.g., `close` not `close!`) |
 | Alphabetize private methods | Order by invocation sequence |
 | Create a service object as special artifact | Move logic to model, call from controller |
 
@@ -51,7 +51,7 @@ If you're about to do any of these, you're violating 37signals style:
 | Ordering methods? | Invocation sequence (caller before callee) | Method Ordering |
 | New controller action? | Create new resource instead | CRUD Controllers |
 | Complex business logic? | Rich model method, thin controller | Controller/Model |
-| Destructive method name? | No `!` unless counterpart exists | Bang Methods |
+| Destructive method name? | No bang unless counterpart exists | Bang Methods |
 | Background job? | Use `_later`/`_now` pattern | Background Jobs |
 
 ## Code Style Patterns
@@ -215,7 +215,7 @@ end
 
 ### Bang Methods (Restrictive Rule)
 
-**Only use `!` when non-bang counterpart exists:**
+**Only use bang when non-bang counterpart exists:**
 
 ```ruby
 # Good - has counterpart
@@ -233,7 +233,7 @@ def close
 end
 ```
 
-**Why:** Don't use `!` to flag "destructive actions". Many destructive Ruby/Rails methods lack `!`.
+**Why:** Don't use bang to flag "destructive actions". Many destructive Ruby/Rails methods lack it.
 
 ## Architecture Patterns
 
@@ -461,6 +461,6 @@ end
 - [ ] Used if/else instead of guard clauses (except single guard at method start with complex body)
 - [ ] Indented all private methods under `private` keyword
 - [ ] Ordered methods by invocation sequence, not alphabetically
-- [ ] Only added `!` to methods with non-bang counterparts
+- [ ] Only added bang to methods with non-bang counterparts
 - [ ] Kept business logic in models, not service objects
 - [ ] Used resource-oriented routing (no custom controller actions)

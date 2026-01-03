@@ -189,8 +189,8 @@ app/controllers/cards/closures_controller.rb
 
 - Concern NOT ending in `-able` or `-ible`
   - Including: `-ing`, `-er`, `-ish`, `-like`, `Logic`, `Management`, `Handler`, `Service`
-- State method with `!` (pin!, close!, assign!)
-- Routes using `member do` or `collection do` for state changes
+- State method with bang suffix (e.g., pin!, close!, assign!)
+- Routes using member/collection blocks for state changes
 - Async method without `_later` suffix
 - Controller mismatch: plural name with singular resource (`ClosureController` instead of `ClosuresController`)
 
