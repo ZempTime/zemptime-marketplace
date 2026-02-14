@@ -48,6 +48,7 @@ superpowers:brainstorming → /shape → superpowers:writing-plans
 
 | Skill | When It Activates |
 |-------|-------------------|
+| `vanilla-rails-routing` | Defining routes, nesting, namespaces |
 | `vanilla-rails-controllers` | Writing Rails controllers |
 | `vanilla-rails-models` | Writing Rails models or concerns |
 | `vanilla-rails-data-modeling` | Designing database schema, writing migrations |

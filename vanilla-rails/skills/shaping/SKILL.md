@@ -36,6 +36,7 @@ Check each vanilla-rails skill. For each, state whether it applies:
 - **naming** - Naming conventions
 
 **Apply if relevant:**
+- **routing** - Adding routes, nesting, namespaces?
 - **data-modeling** - Adding tables, migrations, schema decisions?
 - **delegated-types** - 5+ content types comingling in feeds/timelines?
 - **models** - Adding model behavior, state tracking, concerns?
@@ -118,6 +119,7 @@ The writing-plans skill will create detailed, step-by-step implementation tasks 
 
 | Skill | When to Apply |
 |-------|---------------|
+| routing | Routes, nesting, namespaces |
 | data-modeling | New tables, migrations, schema |
 | delegated-types | 5+ types in unified timeline/feed |
 | models | State tracking, concerns, associations |
