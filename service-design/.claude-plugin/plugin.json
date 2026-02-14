@@ -1,0 +1,12 @@
+{
+  "name": "service-design",
+  "description": "Epistemic machinery for service blueprinting, empathy analysis, journey mapping, and continuous improvement — generates understanding from code, docs, and transcripts to inform what to build next.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Chris Zempel"
+  },
+  "homepage": "https://github.com/zemptime/zemptime-marketplace",
+  "repository": "https://github.com/zemptime/zemptime-marketplace",
+  "license": "MIT",
+  "keywords": ["service-design", "blueprinting", "empathy", "journey-map", "ux", "service-quality", "pdsa"]
+}
