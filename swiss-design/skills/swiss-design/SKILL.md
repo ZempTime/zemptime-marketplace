@@ -1,59 +1,47 @@
 ---
 name: swiss-design
-description: Use when designing interfaces, data visualizations, documentation, or any output where clarity and visual hierarchy matter - applies Swiss design principles of reduction, grid structure, hierarchy, and typography
+description: Use when generating any output a human will read — interfaces, documentation, data visualizations, CLI output, tables, diagrams
 ---
 
 # Swiss Design for Software
 
 **Core principle:** Clarity through reduction. Every element must earn its place. Remove until removing more would harm understanding.
 
-The Swiss/International Typographic Style emerged in 1950s Switzerland as a reaction against decorative excess. Its principles—mathematical grids, typographic hierarchy, ruthless reduction—created a universal visual language that transcends culture and context.
-
-These same principles apply directly to software and interaction design. A well-designed interface, like a well-designed poster, guides attention through structure rather than decoration.
-
 ## The Four Principles
 
-1. **Reduction** — Strip to essentials. If it doesn't serve comprehension, it's noise. → [reduction.md]
+| Principle | Rule | Test |
+|-----------|------|------|
+| **Reduction** | If it doesn't serve comprehension, it's noise. Remove it. | Can I remove this without losing meaning? |
+| **Grid** | Mathematical structure creates visual order. Alignment implies relationship. | Does alignment create rhythm and relationships? |
+| **Hierarchy** | Control attention through contrast in size, weight, position. Three levels max. | Is there a clear reading order at a glance? |
+| **Typography** | Type carries content and creates structure. One typeface, two weights. | Is type doing the structural work, not color or decoration? |
 
-2. **Grid** — Mathematical structure creates visual order that reduces cognitive load. → [grid.md]
+Deep reference for each: [reduction.md], [grid.md], [hierarchy.md], [typography.md]
 
-3. **Hierarchy** — Control attention through contrast in size, weight, and position. → [hierarchy.md]
+## Apply to Every Output
 
-4. **Typography** — Type is the primary tool. It carries content and creates structure without ornament. → [typography.md]
+Before finalizing, run each test above. If any answer is "no," revise. This is not optional.
 
-## When This Skill Applies
+**Verification — the grayscale test:** If the design doesn't work in grayscale, the structure is weak. Color supplements hierarchy; it never creates it.
 
-- Generating UI components or layouts
-- Creating documentation or technical prose
-- Building data visualizations, tables, charts
-- Designing CLI output or terminal interfaces
-- Any output where a human needs to quickly comprehend information
-
-## The Swiss Test
-
-Before finalizing any design output, ask:
-
-1. **Reduction:** Can I remove anything without losing meaning?
-2. **Grid:** Does alignment create rhythm and relationships?
-3. **Hierarchy:** Is there a clear reading order through size/weight/position?
-4. **Typography:** Is type doing the structural work (not color or decoration)?
-
-If any answer is "no," revise before shipping.
+**Verification — the squint test:** Blur your vision. What do you see first? That's your primary element. If nothing stands out, hierarchy is broken.
 
 ## Common Failures
 
-**Decoration creep:** Adding visual elements "to make it look better" rather than to aid comprehension. Gradients, shadows, illustrations, icons—each must justify its presence.
+| Failure | Symptom | Fix |
+|---------|---------|-----|
+| Decoration creep | Gradients, shadows, icons that don't encode meaning | Remove. Does comprehension survive? |
+| Hierarchy collapse | Everything bold, 12 font sizes, rainbow colors | Three levels max. One lever per level. |
+| Grid abandonment | "Just this once" alignment exceptions | Fix the system, don't patch around it |
+| Color as crutch | Hierarchy exists only in color, not structure | Make it work in grayscale first |
+| Filling empty space | Adding elements because "it looks empty" | Whitespace is breathing room, not a problem |
 
-**Hierarchy collapse:** When everything is bold, nothing is. When there are twelve font sizes, there's no system. Constraint creates clarity.
+## Red Flags
 
-**Grid abandonment:** "Just this once" alignment exceptions accumulate into visual chaos. The grid is not a suggestion.
+- Adding decoration after the design "works" but "looks plain"
+- More than 5 type sizes in one view
+- Elements at more than 3 alignment points
+- Color distinguishing things that should differ in size or weight
+- "Users expect it" as justification for an element (they expect to accomplish their goal)
 
-**Color as crutch:** Using color to create hierarchy that should exist in type. If the design doesn't work in grayscale, the structure is weak.
-
-## Philosophy
-
-Swiss design is not a style—it's a discipline. The goal isn't to "look Swiss." The goal is to remove everything that doesn't serve the reader's comprehension.
-
-Müller-Brockmann: "The grid system is an aid, not a guarantee. It permits a number of possible uses and each designer can look for a solution appropriate to his personal style. But one must learn how to use the grid; it is an art that requires practice."
-
-The same applies to all four principles. They are constraints that, properly applied, create freedom—freedom from arbitrary decisions, freedom from visual noise, freedom for the content to speak.
+**All of these mean: you're decorating, not designing. Strip back.**
